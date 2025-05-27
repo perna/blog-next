@@ -27,8 +27,8 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+      "pnpm lint --fix",
+      "pnpm test --findRelatedTests --bail --passWithNoTests"
     ]
   },
   "devDependencies": {
